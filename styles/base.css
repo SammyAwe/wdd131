@@ -53,12 +53,13 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
+    box-shadow: 0 0 20px rgba(238, 26, 11, 0.719);
+    border-radius: 8px;
 }
 .card {
     background-color: white;
     padding: 20px;
     border-radius: 20px;
-    box-shadow: orange;
     display: flex;
     flex-direction: column;
 }
@@ -80,6 +81,7 @@ main {
 .card img {
     max-width: 120px;
     height: 150px;
+    box-shadow: 0 0 20px rgba(238, 26, 11, 0.719);
     border-radius: 8px;
 }
 main h2 {
