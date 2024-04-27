@@ -1,0 +1,121 @@
+@import 
+url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body {
+    font-family:'Roboto', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+header h1 {
+    margin: 0;
+    background-color: purple;
+    color:#fff;
+    height: 70px;
+    max-width: 100%;
+}
+header nav {
+    display: flex;
+    color: white;
+    justify-content: space-around;
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    text-decoration: underline;
+}
+header nav ul li {
+    margin-right: 10px;
+}
+header nav ul li:last-child {
+    margin-right: 0;
+}
+header nav a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+header nav a:hover {
+    color: #ff6f61;
+}
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: orange;
+    display: flex;
+    flex-direction: column;
+}
+.card .content {
+    display: flex;
+}
+.card .content p{
+    flex: 1;
+    margin-right: 20px;
+}
+.card .content2 {
+    display: flex;
+}
+.card .content2 p{
+    flex: 1;
+    margin-right: 20px;
+}
+
+.card img {
+    max-width: 120px;
+    height: 150px;
+    border-radius: 8px;
+}
+main h2 {
+    align-self: center;
+    background-color: purple;
+    text-decoration: underline;
+}
+footer {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+footer p {
+    margin: 0;
+}
+#currentyear {
+    font-weight: bold;
+}
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 10px;
+    }
+    header h1 {
+        font-size: 24px;
+    }
+    nav li {
+        margin-right: 5px;
+    }
+    main {
+        padding: 10px;
+    }
+    .card {
+        padding: 10px;
+    }
+    footer {
+        padding: 10px;
+    }
+}
