@@ -15,7 +15,7 @@ header {
 }
 header h1 {
     margin: 0;
-    background-color: purple;
+    background-color: #fff;
     color:#fff;
     height: 70px;
     max-width: 100%;
@@ -86,7 +86,7 @@ main {
 }
 main h2 {
     align-self: center;
-    background-color: purple;
+    background-color: #fff;
     text-decoration: underline;
 }
 footer {
