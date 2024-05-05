@@ -1,6 +1,10 @@
 .hamburger {
     display: none;
 }
+nav ul {
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
     .hamburger {
         display: block;
@@ -13,63 +17,4 @@
         flex-direction: column;
         align-items: center;
     }
-}
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
-.close {
-    display: none;
-}
-
-body {
-    background-color: #f9f9f9;
-    color: #333;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-}
-
-
-nav ul li a {
-    color:#fff;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-}
-
-nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-nav ul li {
-    margin-bottom: 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    padding: 10px;
-    transition: background-color 0.3s;
-}
-
-nav ul li a:hover {
-    background-color: #555;
-}
-
-main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
 }
