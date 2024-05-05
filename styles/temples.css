@@ -1,4 +1,6 @@
-
+.hamburger {
+    display: none;
+}
 @media screen and (max-width: 768px) {
     .hamburger {
         display: block;
@@ -15,9 +17,7 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
-.hamburger {
-    display: none;
-}
+
 .close {
     display: none;
 }
