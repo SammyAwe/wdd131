@@ -6,6 +6,9 @@ nav ul {
 }
 
 @media screen and (max-width: 768px) {
+    .grid-container figure img {
+        max-width: 80%;
+    }
     .hamburger {
         display: block;
     }
