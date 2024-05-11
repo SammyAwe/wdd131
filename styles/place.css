@@ -3,12 +3,17 @@
         background-color: green;
         color: white;
         height: 100px;
+        text-align: center;
     }
     #background-box {
         height: 200px;
     }
     #background-img {
         height: 200px;
+        max-width: 100%;
+    }
+    #weather {
+        padding: 10px;
     }
     .data, #weather {
         position: static;
