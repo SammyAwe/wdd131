@@ -17,11 +17,17 @@
     }
     #weather {
         padding: 10px;
+        text-align: center;
     }
     .data, #weather {
         position: static;
         background-color: rgba(255, 255, 255, 0.7);;
         padding: 10px;
+    }
+    .weather-icon {
+        display: inline-block;
+        font-size: 24px;
+        margin-bottom: 10px;
     }
     footer {
         background-color: green;
