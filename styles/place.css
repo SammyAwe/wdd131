@@ -5,14 +5,11 @@
         height: 100px;
         text-align: center;
         border: 1px green;
-        border-style: dotted;
+        border-style: double;
         border-color: white;
     }
     #background-box {
         height: 200px;
-        border: 1px green;
-        border-style: dotted;
-        border-color: white;
     }
     #background-img {
         height: 200px;
@@ -20,9 +17,6 @@
     }
     #weather {
         padding: 10px;
-        border: 1px green;
-        border-style: dotted;
-        border-color: white;
     }
     .data, #weather {
         position: static;
@@ -34,7 +28,7 @@
         color: white;
         padding: 10px;
         border: 1px green;
-        border-style: dotted;
+        border-style: double;
         border-color: white;
     }
 }
