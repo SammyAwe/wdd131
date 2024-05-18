@@ -103,6 +103,9 @@ footer {
     .hamburger {
         display: block;
     }
+    .hamburger.close {
+        display: none;
+    }
     nav ul {
         display: none;
         flex-direction: column;
