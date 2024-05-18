@@ -1,0 +1,131 @@
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+header h1 {
+    margin-left: 1rem;
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+nav ul li {
+    margin-right: 1rem;
+}
+nav ul li:last-child {
+    margin-right: 0;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+nav ul li a:hover {
+    background-color: #fff;
+    color: #333;
+}
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+main h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.grid-container figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.grid-container figure img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+}
+figcaption {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .grid-container figure img {
+        max-width: 80%;
+    }
+    .hamburger {
+        display: block;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        width: 100%;
+        position: absolute;
+        top: 50px; 
+        left: 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+    }
+    nav.show ul {
+        display: flex;
+    }
+    nav ul li {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+    nav ul li a {
+        padding: 10px 0;
+        width: 100%;
+    }
+}
