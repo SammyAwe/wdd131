@@ -10,7 +10,7 @@ document.getElementById("product-name");
    
   products.forEach(product => {
     const option = document.createElement("option");
-    option.value = product.id;
+    option.value = product.name;
     option.textContent = product.name;
     productNameSelect.appendChild(option);
   });
@@ -35,6 +35,8 @@ document.getElementById("product-name");
 
     usefulFeaturesDiv.appendChild(checkbox);
     usefulFeaturesDiv.appendChild(label);
+
+   usefulFeaturesDiv.appendChild(document.createElement("br"));
 
   });
 
