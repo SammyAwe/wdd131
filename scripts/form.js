@@ -16,7 +16,7 @@ document.getElementById("product-name");
   });
 
   const usefulFeatures = [
-    "Feature A", "Feature B.", "Feature C", "Feature D"
+    "Durability", "Ease of Use", "Performance", "Design"
   ];
 
   const usefulFeaturesDiv = 
@@ -41,3 +41,8 @@ document.getElementById("product-name");
   });
 
 });
+
+var currentYear = new Date().getFullYear();
+var lastModifiedDate = document.lastModified;
+document.getElementById("currentYear").innerText = currentYear;
+document.getElementById("lastModified").innerText = lastModifiedDate;

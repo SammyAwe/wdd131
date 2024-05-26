@@ -10,12 +10,12 @@
 </head>
 <body>
     <header>
-        <h1>Product Review Form</h1>
+        <h1>Product Review</h1>
     </header>
     <main>
         <form action="review.html" method="get">
             <div class="form-group">
-                <label for="product-name">Product Name *</label>
+                <label for="product-name">Product Name </label>
                 <select id="product-name" name="product-name" required>
                   <option value="" disabled selected> Select a product...</option>  
                 </select>
@@ -40,21 +40,22 @@
                 <input type="date" id="installation-date" name="installation-date" required>
             </div>
             <div class="form-group">
-                <label>Useful Features</label>
+                <label>Which features did you find useful in the product? <br>
+                (check all that apply)</label>
                 <div class="checkbox-group" id="useful-features">
 
                 </div>
             </div>
             <div class="form-group">
-                <label for="written-review">Written Review</label>
+                <label for="written-review">Written Review (Optional)</label>
                 <textarea id="written-review" name="written-review"></textarea>
             </div>
             <div class="form-group">
-                <label for="user-name">User Name</label>
+                <label for="user-name">Your Name</label>
                 <input type="text" id="user-name" name="user-name">
             </div>
             <div class="form-group">
-                <input type="submit" value="Submit Review">
+                <input type="submit" value="Post Review">
             </div>
         </form>
     </main>
