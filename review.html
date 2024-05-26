@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        <h1>Thank you for your review!</h1>
+    </header>
+    <main>
+        <p>Your review has been submitted successfully.</p>
+        <p>Number of reviews you have submitted: <span id="review-count"></span></p>
+    </main>
+    <footer>
+        <p>
+            &copy;<span id="currentYear"></span>
+              Samuel Awe.
+              Nigeria.
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let reviewCount = localStorage.getItem("reviewCount") 
+            || 0;
+            reviewCount++;
+            localStorage.setItem("reviewCount", reviewCount);
+            document.getElementById("review-count").textContent = reviewCount;
+        });
+    </script>
+</body>
+</html>
