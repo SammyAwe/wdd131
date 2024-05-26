@@ -16,7 +16,7 @@ document.getElementById("product-name");
   });
 
   const usefulFeatures = [
-    "Feature A", "Feature B", "Feature C", "Feature D"
+    "Feature A", "Feature B.", "Feature C", "Feature D"
   ];
 
   const usefulFeaturesDiv = 
