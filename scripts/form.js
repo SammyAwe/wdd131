@@ -26,7 +26,7 @@ document.getElementById("product-name");
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
     checkbox.id = `feature-${index}`;
-    checkbox.name = "useful-features";
+    checkbox.name = "useful-feature";
     checkbox.value = feature;
     
     const label = document.createElement("label");
