@@ -58,14 +58,14 @@ input[type="submit"] {
     width: 100%;
 }
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #333;
 }
 footer {
     text-align: center;
     padding: 1em;
     background-color: #4caf50;
     color: #f4f4f4;
-    position: fixed;
+    position:relative;
     width: 100%;
     bottom: 0;
 }
